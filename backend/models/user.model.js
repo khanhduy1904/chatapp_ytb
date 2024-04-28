@@ -28,6 +28,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+
+    userMail: {
+      type: String,
+      unique: true,
+    },
   },
   { timestamps: true }
 );
